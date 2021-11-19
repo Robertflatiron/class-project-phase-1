@@ -29,11 +29,11 @@
   .image-container {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
   }
   
   .image-card {
-    width: 300px;
+    width: 500px;
     border: 0px solid #00000020;
     border-radius: 2px;
     text-align: left;
@@ -41,14 +41,14 @@
   }
   
   .image {
-    width: 300px;
+    width: 500px;
     /* border: 1px solid black; */
   }
   
   .title {
     text-align: left;
     padding: 15px 10px;
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 600;
     color: #000000dd;
   }
@@ -61,12 +61,12 @@
   }
   
   .likes {
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 600;
   }
   
   .like-button {
-    color: rgb(255, 127, 80);
+    color: rgb(39, 1, 252);
     font-size: 1.5rem;
     border: none;
     background: none;
