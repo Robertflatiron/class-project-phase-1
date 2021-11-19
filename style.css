@@ -20,6 +20,7 @@
     text-align: center;
     background-color: #fafafa;
     background-image: url("https://bestof.nyc3.digitaloceanspaces.com/devsnap.me/sam/svg-and-css-squiggly-pattern.gif")
+    
   }
   
   .logo {
@@ -30,6 +31,7 @@
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
   }
   
   .image-card {
@@ -42,6 +44,7 @@
   
   .image {
     width: 500px;
+    height: 375px;
     /* border: 1px solid black; */
   }
   
