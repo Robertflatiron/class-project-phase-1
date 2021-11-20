@@ -45,8 +45,3 @@ function addLikeOrComment(event) {
       // add it to the dom
     }
   }
-
-
-
-
-
