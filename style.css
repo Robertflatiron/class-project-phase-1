@@ -1,3 +1,42 @@
+header {
+  position: relative;
+  background-color: black;
+  height: 75vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
 *{
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -6,11 +45,13 @@
 
 #header {
     color: black;
+    text-shadow: -1px -1px 0 rgb(247, 241, 241), 1px -1px 0 rgb(247, 241, 241),
+    -1px 1px 0 rgb(247, 241, 241), 1px 1px 0 rgb(247, 241, 241);
 }
 
 h1 {
   font-family:cursive;
-  border: 5px solid blueviolet;
+  border: 5px solid powderblue;
   background-color: white;
 }
 
@@ -28,6 +69,7 @@ body {
 
 .image-container {
   width: 100%;
+  flex-direction: row;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -39,12 +81,16 @@ body {
   border-radius: 2px;
   text-align: left;
   background-color: white;
+  transition: 0.3s;
+}
+
+.image-card:hover {
+  box-shadow: 0 8px 16px 0 turquoise
 }
 
 .image {
   width: 500px;
   height: 375px;
-  /* border: 1px solid black; */
 }
 
 .car-title {
